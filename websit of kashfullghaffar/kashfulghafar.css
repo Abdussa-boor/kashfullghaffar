@@ -1,0 +1,521 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100%;
+  background-color: rgb(255, 238, 206);
+  border: solid 3px black;
+}
+
+@font-face {
+  font-family: 'Amiri1';
+  src: url('Amiri1.ttf');
+}
+
+header {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  height: 90px;
+  border: solid 1px black;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 2px 5px 7px gray;
+  font-family: 'Amiri1';
+  position: sticky;
+  top: 0.4px;
+  z-index: 1000;
+}
+
+.right {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  padding: 4px;
+  margin: 3px 3px;
+}
+
+.right img {
+  width: 130px;
+  height: 75px;
+}
+
+.right img :hover {
+  cursor: pointer;
+}
+#menu img {
+  display: none;
+  filter: invert(100%);
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  padding: 4px;
+  margin: 3px 3px;
+  width: 50px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 25px;
+  margin-left: 50px;
+  text-justify: center;
+  text-align: center;
+}
+
+ul li {
+  padding: 5px 8px;
+  margin: 20px 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  text-size-adjust: 5px;
+}
+
+ul li :hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: red;
+  /* padding: -10px 0px;
+    margin: 10px 0px; */
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu li {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 1px;
+}
+
+ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 5px;
+  list-style-type: none;
+  background-color: rgb(255, 0, 0);
+  color: rgb(253, 251, 251);
+}
+
+br {
+  display: block;
+  margin: -5px;
+  border-bottom: 1px dashed gray;
+  color: white;
+  height: 1.5px;
+  width: 30px;
+}
+hr {
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+}
+.submenu2 {
+  display: none;
+}
+
+.submenu2 li {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 1px;
+}
+
+ul li:hover .submenu2 {
+  display: block;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 5px;
+  list-style-type: none;
+  background-color: rgb(255, 0, 0);
+  color: rgb(253, 251, 251);
+}
+
+.down img {
+  width: 20px;
+  filter: invert(100%);
+  margin: -10px -4px;
+}
+
+.countinar {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 5px;
+  text-align: justify; /* متن کو برابر سیدھا کرے گا */
+  direction: ltr; /* متن کو دائیں سے بائیں کرے گا */
+  text-align-last: center; /* آخری لائن کو دائیں رکھے گا */
+  width: auto;
+}
+
+#box-1 {
+  border: solid red 3px;
+  margin: 5px;
+  padding: 10px;
+  width: 55%;
+  height: 650px;
+}
+
+#box-1 h1 {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 7px gray;
+}
+
+.boxes {
+  margin: 5px;
+  padding: 30px;
+}
+
+#first {
+  border: solid 1px red;
+  width: 40%;
+  height: 450px;
+  font-size: 25px;
+  font-family: 'Amiri';
+  float: right;
+}
+
+#first h3 {
+  border: solid 1px black;
+  padding: 10px;
+  margin: 5px;
+  background-color: red;
+  color: white;
+  box-shadow: 2px 2px 7px gray;
+}
+
+#first p {
+  font-size: 25px;
+  text-align: justify; /* متن کو برابر سیدھا کرے گا */
+  direction: rtl; /* متن کو دائیں سے بائیں کرے گا */
+  text-align-last: center; /* آخری لائن کو دائیں رکھے گا */
+  width: 100%;
+  height: 70px;
+  padding: 15px 0px;
+}
+
+#second {
+  border: solid 1px red;
+  width: 40%;
+  height: 450px;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Amiri';
+  float: left;
+}
+
+#second h3 {
+  border: solid 1px black;
+  padding: 10px;
+  margin: 5px;
+  background-color: red;
+  color: white;
+  box-shadow: 2px 2px 7px gray;
+}
+
+#second p {
+  font-size: 25px;
+  text-align: justify; /* متن کو برابر سیدھا کرے گا */
+  direction: rtl; /* متن کو دائیں سے بائیں کرے گا */
+  text-align-last: center; /* آخری لائن کو دائیں رکھے گا */
+  width: 100%;
+  height: 70px;
+  padding: 30px 0px;
+}
+
+#third {
+  border: solid 1px red;
+  width: 97%;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Amiri';
+  float: right;
+  padding: 5px;
+  align-content: 'itme';
+  display: flex;
+  flex-direction: Colom -reverse;
+  justify-content: center;
+}
+
+#third p {
+  font-size: 25px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+#box-2 {
+  border: solid red 3px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 40%;
+}
+
+#box-2 h1 {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  box-shadow: 2px 2px 7px gray;
+}
+
+#box-2 p {
+  font-size: 25px;
+  width: 100%;
+  height: 170px;
+  text-align: justify; /* متن کو برابر سیدھا کرے گا */
+  direction: rtl; /* متن کو دائیں سے بائیں کرے گا */
+  text-align-last: center; /* آخری لائن کو دائیں رکھے گا */
+  font-family: 'Amiri';
+  margin: 20px 0px;
+}
+
+#box-2 p span {
+  display: block;
+}
+
+#box3 {
+  border: solid red 3px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+}
+
+span {
+  color: red;
+  font-size: 30px;
+  font-family: 'Amiri';
+  margin: auto 10px;
+}
+
+.countinar2 {
+  border: solid red 3px;
+  margin: 5px 0px;
+  padding: 30px 5px;
+  /* display: flex; */
+}
+
+.countinar2 h3 {
+  border: solid 1px black;
+  padding: 10px;
+  margin: 5px;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  box-shadow: 2px 2px 7px gray;
+}
+
+.subcountinar2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.kinds {
+  border: solid red 1px;
+  margin: 10px;
+  padding: 15px 40px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Amiri';
+}
+
+.kinds h6 {
+  font-size: 30px;
+  display: block;
+  padding: 0px 5px;
+  margin: 15px -15px;
+  border: solid black 1px;
+  background: red;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 2px 2px 7px gray;
+}
+
+.note {
+  border: solid red 1px;
+  width: 90%;
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 5px auto -15px auto;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-family: 'Amiri';
+  box-shadow: 2px 2px 4px gray;
+}
+/* @media (max-width: 600px) {
+  header {
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    height: 70px;
+    border: solid 1px black;
+    background-color: rgb(21, 18, 31);
+    box-shadow: 1px 3px 7px gray;
+    font-family: 'Amiri1';
+    position: sticky;
+    top: 0.4px;
+    z-index: 1000;
+  }
+  #menu img {
+    display: block;
+    filter: invert(200%);
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 4px;
+    margin: 3px 3px;
+    width: 30px;
+  }
+  .right {
+    position: relative;
+    left: 2px;
+    top: 0px;
+    padding: 4px;
+    margin: 3px 3px;
+  }
+
+  .right img {
+    width: 100px;
+    height: 55px;
+  }
+
+  .right img :hover {
+    cursor: pointer;
+  }
+  ul {
+    display: none;
+    /* display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        color: black; 
+        }
+        */
+  /* ul li {
+        padding: -0px;
+        margin: 5px;
+    }
+    ul li a{
+        color: black;
+        padding: 0px;
+        margin: -0px;
+    } */
+  /* .countinar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    align-items: center; 
+    justify-content: center;
+    direction: ltr; 
+    text-align-last: center; 
+    width: auto;
+  }
+  #box-1 {
+    border: solid red 2px;
+    margin: 5px;
+    padding: 10px;
+    width: 94%;
+    height: 680px;
+  }
+
+  #box-1 h1 {
+    background-color: red;
+    color: white;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-shadow: 2px 2px 7px gray;
+  }
+  #first {
+    border: solid 1px red;
+    width: 97%;
+    margin: auto;
+    height: 230px;
+    font-family: 'Amiri';
+}
+
+#first h3 {
+    border: solid 1px black;
+    font-size: 25px;
+    padding: 5px;
+    margin: 0px;
+    background-color: red;
+    color: white;
+    box-shadow: 2px 2px 7px gray;
+  }
+
+  #first p {
+    font-size: 20px;
+    text-decoration: rtl;
+    text-align:right;
+    padding: 0px;
+    
+}
+
+#second {
+    border: solid 1px red;
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+}
+
+#second h3 {
+    border: solid 1px black;
+    font-size: 25px;
+    padding: 1px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    box-shadow: 2px 2px 7px gray;
+  }
+
+  #second p {
+    font-size: 20px;
+    text-decoration: rtl;
+    text-align:right;
+    padding: 0px;
+  }
+
+  #third {
+    border: solid 1px red;
+    font-size: 20px;
+    font-family: 'Amiri';
+    padding: 1px;
+  }
+
+  #third p {
+    font-size: 20px;
+  }
+  span {
+    color: red;
+    font-size: 25px;
+    font-family: 'Amiri';
+    margin: auto 5px;
+  }
+  .boxes {
+    margin: 5px;
+    padding: 10px;
+  }
+} */ 

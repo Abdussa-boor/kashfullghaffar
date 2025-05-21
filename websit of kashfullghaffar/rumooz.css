@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: wheat;
+    border: 5pt solid rgb(100, 100, 100);
+}
+
+@font-face {
+    font-family: 'Amiri1';
+    src: url("Amiri1.ttf");
+}
+
+/* @font-face {
+    font-family: 'Diwani';
+    src: url('Diwani.ttf');
+
+}
+
+@font-face {
+    font-family: 'jameel1';
+    src: url('Jameel\ Noori\ Nastaleeq.ttf');
+    
+}
+
+@font-face {
+    font-family: 'jameel2';
+    src: url('jameel\ noori\ nastaleeq 2.ttf');
+    
+}
+
+@font-face {
+    font-family: 'kufi';
+    src: url('Kufi.ttf');
+} */
+
+header {
+    margin-bottom:10px;
+    display: flex;
+    border: solid 1px black;
+    height: 90px;
+    background-color: rgb(255, 0, 0);
+    /* padding: 0px; */
+    box-shadow: 2px 5px 7px gray;
+    font-family: "Amiri1";
+    position: sticky;
+    top: 0.4px;
+    z-index: 1000;
+}
+
+.right {
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    padding: 4px;
+    margin: 3px 3px;
+}
+
+.right img {
+    width: 130px;
+    height: 75px;
+}
+.right img :hover{
+    cursor: pointer;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 25px;
+    margin-left: 50px;
+    text-justify: center;
+    text-align: center;
+}
+
+ul li {
+    padding: 5px 10px;
+    margin: 20px 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    text-size-adjust: 5px;
+}
+
+ul li :hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: red;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li {
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px;
+    border-radius: 1px;
+}
+
+ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 5px;
+    list-style-type: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(253, 251, 251);
+    z-index: 1000;
+}
+
+br {
+    display: block;
+    margin: -5px;
+    border-bottom: 1px dashed gray;
+    color: white;
+    height: 1.5px;
+    width: 30px;
+}
+hr{
+    margin-top: 10px;
+      width: 100%;
+      color: white;
+    }
+.submenu2 {
+    display: none;
+}
+
+.submenu2 li {
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: solid 1px;
+    border-radius: 1px;
+}
+
+ul li:hover .submenu2 {
+    display: block;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 5px;
+    list-style-type: none;
+    background-color: rgb(255, 0, 0);
+    color: rgb(253, 251, 251);
+    z-index: 1000;
+}
+.down img {
+    width: 20px;
+    filter: invert(100%);
+    margin: -10px -4px;
+}
+
+h1 {
+    margin: auto;
+    width: 40%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px gray;
+    text-align: center;
+    background-color: rgb(225, 14, 14);
+    color: white;
+    padding: 5px;
+    font-family: Amiri1;
+}
+
+
+
+table {
+    background-color: rgb(92, 35, 35);
+    color: white;
+    direction: rtl;
+    text-align: center;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: solid 2px;
+    border-color: rgb(7, 7, 7);
+    border-collapse: collapse;
+    font-family: Amiri1;
+    font-size: 18px;
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+
+#rumooz2 table,
+th,
+td {
+    border: solid 2px;
+    border-color: wheat;
+    font-family: Amiri1;
+    font-size: 18px;
+    padding: 5px 3px;
+    margin: 5px 0px;
+}
+
+th {
+    background-color: rgb(196, 44, 44);
+}
+.picture img {
+    margin-left: 10px;
+    width: 52%;
+    box-shadow: 8px 5px 7px gray;
+    height: 400px;
+}
+.source {
+
+    display: block;
+    width: 45%;
+    box-shadow: 8px 5px 7px gray;
+    margin: 0px;
+    position: absolute;
+    top: 850px;
+    float: right;
+    right: 10px;
+    font-size: 25px;
+    font-family: 'Amiri';
+    background-color: #f2eeee;
+    text-align: justify;  /* متن کو برابر سیدھا کرے گا */
+    direction: rtl;       /* متن کو دائیں سے بائیں کرے گا */
+    text-align-last: center; /* آخری لائن کو دائیں رکھے گا */
+    width: 45%;
+    padding: 5px;
+}
+.source p1{
+    line-height: 50px;
+    font-size: 30px;
+}
+.source p2{
+    line-height: 50px;
+}
+.source hr{
+    background-color: wheat;
+    color: wheat;
+    border: 2px solid wheat;
+}
+.source br{
+    margin: 5px 0px
+}

@@ -1,0 +1,295 @@
+body {
+  height: 100%;
+  background-color: rgb(255, 238, 206);
+  border: solid 3px black;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+@font-face {
+  font-family: 'Amiri1';
+  src: url("Amiri1.ttf");
+}
+
+header {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  height: 90px;
+  border: solid 1px black;
+  background-color: rgb(255, 0, 0);
+  /* padding: 0px; */
+  box-shadow: 2px 5px 7px gray;
+  font-family: "Amiri1";
+  position: sticky;
+  top: 0.4px;
+  z-index: 1000;
+}
+
+.right {
+  position: absolute;
+  right: 5px;
+  top: 0px;
+  padding: 4px;
+  margin: 3px 3px;
+}
+
+.right img {
+  width: 130px;
+  height: 75px;
+}
+
+.right img :hover {
+  cursor: pointer;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 25px;
+  margin-left: 50px;
+  text-justify: center;
+  text-align: center;
+}
+
+ul li {
+  padding: 5px 10px;
+  margin: 20px 10px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  text-size-adjust: 5px;
+}
+
+ul li :hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: red;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu li {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 1px;
+}
+
+ul li:hover .submenu {
+  display: block;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 5px;
+  list-style-type: none;
+  background-color: rgb(255, 0, 0);
+  color: rgb(253, 251, 251);
+  z-index: 1000;
+}
+
+br {
+  display: block;
+  margin: -5px;
+  border-bottom: 1px dashed gray;
+  /* color: white; */
+  height: 1.5px;
+  width: 30px;
+}
+
+.submenu2 {
+  display: none;
+}
+
+.submenu2 li {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 1px;
+}
+
+ul li:hover .submenu2 {
+  display: block;
+  position: absolute;
+  margin-left: -10px;
+  margin-top: 5px;
+  list-style-type: none;
+  background-color: rgb(255, 0, 0);
+  color: rgb(253, 251, 251);
+  z-index: 1000;
+}
+
+.down img {
+  width: 20px;
+  filter: invert(100%);
+  margin: -10px -4px;
+}
+h1 {
+  margin: auto;
+  width: 40%;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 5px;
+  font-family: Amiri1;
+  margin-top: 20px;
+}
+.qualitie {
+    
+  font-size: 25px;
+  font-family: 'Amiri';
+  text-align: center;
+  padding: 0px 20px;
+  margin: 30px auto -20px 10px;
+  align-content: center;
+}
+p span {
+  color: rgb(131, 9, 9);
+  text-decoration: underline;
+  font-size: 30px;
+}
+hr:hover{
+  color: red;
+}
+hr{
+margin-top: 10px;
+  width: 100%;
+  color: white;
+}
+.qualitie {
+  font-size: 25px;
+  font-family: 'Amiri';
+  text-align: center;
+  padding: 0px 20px;
+  margin: 30px auto -20px 10px;
+  align-content: center;
+}
+.ijazat {
+  font-size: 25px;
+  font-family: 'Amiri';
+  text-align: center;
+  padding: 0px 20px;
+  margin: 30px auto -20px 10px;
+  align-content: center;
+}
+details summary {
+  padding: 4px 15px;
+  width: 100%;
+  background-color: white;
+  border: solid 1px rgb(216, 6, 6);
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+  text-align: right;
+  color: rgb(131, 9, 9);
+  font-size: 30px;
+  margin-left: -20px;
+  margin-bottom: 8px;
+  margin-top: -15px;
+  border-radius: 10px;
+}
+summary:hover{
+  border-color: #007BFF;
+  color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+details p {
+  background-color: white;
+  text-align: justify;
+  width: 213.7vh;
+  direction: rtl;
+  text-align-last:center;
+  padding: 4px;
+  margin: -5px -12px 10px -20px;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  border-radius: 10px;
+  border: solid 1px rgb(216, 6, 6);
+}
+#one {
+  width: 2px;
+  height: 50px;
+  background-color: red;
+  /* border: solid 0.05px black; */
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: -15px;
+}
+
+#two {
+  width: 994px;
+  height: 2px;
+  background-color: red;
+  /* border: solid 0.05px black; */
+  margin: auto;
+  margin-top: 5px;
+}
+#three {
+  display: inline-block;
+  width: 2px;
+  height: 70px;
+  background-color: red;
+  /* border: solid 0.05px black; */
+  margin: 0% 13%;
+}
+
+#foure {
+  display: inline-block;
+  width: 2px;
+  height: 70px;
+  background-color: red;
+  /* border: solid 0.05px black; */
+  margin: 0% 23.5%;
+}
+
+#five {
+  display: inline-block;
+  width: 2px;
+  height: 70px;
+  background-color: red;
+  /* border: solid 0.05px black; */
+  margin: 0% 12.98%;
+}
+
+
+.manhaj {
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: Amiri1;
+  font-size: 25px;
+  text-align: right;
+  color: rgb(131, 9, 9)
+}
+.manhaj1 {
+  border: 1.50px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 63px;
+  text-align: center;
+}
+.manhaj2 {
+  border: 1.50px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right:  210px;
+  text-align: center;
+}
+.manhaj3 {
+  border: 1.50px solid red;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 230px;
+  text-align: center;
+}
